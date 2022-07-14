@@ -1,0 +1,45 @@
+<header>
+  <a routerLink="/" class="menu">
+    <i class="fa fa-arrow-left" aria-hidden="true"></i>
+  </a>
+  <div class="brand">
+    <!-- <i class="fa fa-gitlab"></i> -->
+     <!-- <span class="brand-name"><a routerLink="/">Senga</a></span> -->
+  </div>
+  <div>
+    <i class="fa fa-plus-square" aria-hidden="true"></i>
+    <!-- <i class="fa fa-map-marker" aria-hidden="true"></i>
+    <span class="location">GH</span> -->
+  </div>
+</header>
+
+
+<div class="container">
+  <div class="senga {{senga.type}} " [ngStyle]="{'background-color': senga?.backColor}">
+    <div class="content">
+      <img *ngIf="senga.type == 'photo'" [src]="senga.url" alt="">
+      <div  class="text" *ngIf="senga.type == 'text'">
+        {{senga.description}}
+      </div>
+      <div *ngIf="senga.type == 'video'">
+        <video width="100%" height="100%" controls autoplay>
+          <source src="../../../assets/vid/y.mp4" type="video/mp4">
+          <!-- <source src="movie.ogg" type="video/ogg"> -->
+          Your browser does not support the video tag.
+        </video>
+        <!-- <iframe  src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+        </iframe> -->
+      </div>
+    </div>
+    <div class="info">
+      <div><i class="fa fa-comment-o " aria-hidden="true"></i> {{senga.comments}}</div>
+      <div><i class="fa fa-heart-o" aria-hidden="true"></i> {{senga.likes}}</div>
+
+    </div>
+  </div>
+  <div class="comments">
+    <div class="comment" *ngFor="let item of comments">
+      {{item}}
+    </div>
+  </div>
+</div>

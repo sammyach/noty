@@ -1,0 +1,6 @@
+{
+	"appId": "com.example.app",
+	"appName": "senga",
+	"webDir": "dist/senga",
+	"bundledWebRuntime": false
+}

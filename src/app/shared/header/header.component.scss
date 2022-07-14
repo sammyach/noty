@@ -1,0 +1,36 @@
+header{
+  height: 40px;
+  background: #fff;
+  border-bottom: 2px solid #20a8f7;//b330f0;//#f7437f;//orange;
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem;
+  color: #20a8f7;//b330f0;//20a8f7;//f7437f;//orange;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+  color: #20a8f7;
+}
+
+.brand a{
+  text-decoration: none;
+  color: #20a8f7;//b330f0;
+}
+
+.brand-name{
+  margin-left: .5rem;
+  font-family: 'Kaushan Script', 'Nunito', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.location{
+  font-size: .6rem;
+  margin-left: .2rem;
+}
+

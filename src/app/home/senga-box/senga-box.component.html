@@ -1,0 +1,27 @@
+<a [routerLink]="['/senga' , senga.id, 'details']">
+  <div class="box ">
+    <div class="box-header">
+      <img *ngIf="senga.type == 'photo'" [src]="senga.url" alt="">
+      <div [ngStyle]="{'background-color': senga?.backColor}" class="text" *ngIf="senga.type == 'text'">
+        {{senga.description}}
+      </div>
+      <!-- <i class="fa fa-{{senga.icon}} " aria-hidden="true"></i>
+      <div class="time">{{senga.time}}</div> -->
+    </div>
+    <div class="box-content">
+      <!-- <i class="fa fa-{{senga.icon}} " aria-hidden="true"></i> -->
+
+    </div>
+    <div class="box-footer">
+      <div>
+        <div class="time">{{senga.time}}</div>
+      </div>
+      <div class="footer-child">
+        <div class="comments"><i class="fa fa-comment-o" aria-hidden="true"></i> {{senga.comments}}</div>
+        <div class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i> {{senga.likes}}</div>
+      </div>
+
+    </div>
+  </div>
+</a>
+

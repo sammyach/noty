@@ -1,0 +1,124 @@
+<app-header></app-header>
+<div class="container"
+  infiniteScroll
+  [infiniteScrollDistance]="2"
+  [infiniteScrollThrottle]="50"
+  (scrolled)="onScrollDown()"
+  (scrolledUp)="onScrollUp()">
+
+  <div *ngIf="isUpScroll" class="loader-wrapper">
+    <i class="fa fa-spinner loader" aria-hidden="true"></i>
+  </div>
+  <!-- <app-senga-frame *ngFor="let item of data" [senga]="item"></app-senga-frame> -->
+
+  <app-senga-note></app-senga-note>
+  <!-- <ng-container *ngIf="data">
+      <app-senga-box *ngFor="let item of data; trackBy: dataTrackBy" [senga]="item"></app-senga-box>
+
+  </ng-container> -->
+  <!-- <div class="box audio">
+    <div class="box-header">
+      <i class="fa fa-microphone " aria-hidden="true"></i>
+      <div class="time">50min</div>
+    </div>
+    <div class="box-content">
+      <i class="fa fa-microphone " aria-hidden="true"></i>
+
+    </div>
+    <div class="box-footer">
+      <div class="comments"><i class="fa fa-comment-o" aria-hidden="true"></i> 15</div>
+      <div class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i> 21</div>
+    </div>
+  </div> -->
+
+  <!-- <div class="box text">
+    <div class="box-header">
+      <i class="fa fa-pencil-square-o " aria-hidden="true"></i>
+      <div class="time">50min</div>
+    </div>
+    <div class="box-content">
+      <i class="fa fa-pencil-square-o " aria-hidden="true"></i>
+
+    </div>
+    <div class="box-footer">
+      <div class="comments"><i class="fa fa-comment-o" aria-hidden="true"></i> 15</div>
+      <div class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i> 21</div>
+    </div>
+  </div>
+
+  <div class="box photo">
+    <div class="box-header">
+      <i class="fa fa-camera " aria-hidden="true"></i>
+      <div class="time">50min</div>
+    </div>
+    <div class="box-content">
+      <i class="fa fa-camera " aria-hidden="true"></i>
+
+    </div>
+    <div class="box-footer">
+      <div class="comments"><i class="fa fa-comment-o" aria-hidden="true"></i> 15</div>
+      <div class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i> 21</div>
+    </div>
+  </div>
+
+  <div class="box text">
+    <div class="box-header">
+      <i class="fa fa-pencil-square-o " aria-hidden="true"></i>
+      <div class="time">50min</div>
+    </div>
+    <div class="box-content">
+      <i class="fa fa-pencil-square-o " aria-hidden="true"></i>
+
+    </div>
+    <div class="box-footer">
+      <div class="comments"><i class="fa fa-comment-o" aria-hidden="true"></i> 15</div>
+      <div class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i> 21</div>
+    </div>
+  </div>
+
+  <div class="box video">
+    <div class="box-header">
+      <i class="fa fa-video-camera " aria-hidden="true"></i>
+      <div class="time">50min</div>
+    </div>
+    <div class="box-content">
+      <i class="fa fa-video-camera " aria-hidden="true"></i>
+    </div>
+    <div class="box-footer">
+      <div class="comments"><i class="fa fa-comment-o" aria-hidden="true"></i> 15</div>
+      <div class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i> 21</div>
+    </div>
+  </div>
+
+  <div class="box audio">
+    <div class="box-header">
+      <i class="fa fa-video-camera " aria-hidden="true"></i>
+      <div class="time">50min</div>
+    </div>
+    <div class="box-content">
+      <i class="fa fa-microphone" aria-hidden="true"></i>
+
+    </div>
+    <div class="box-footer">
+      <div class="comments"><i class="fa fa-comment-o" aria-hidden="true"></i> 15</div>
+      <div class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i> 21</div>
+    </div>
+  </div>
+  <div class="box video">
+    <div class="box-header">
+      <i class="fa fa-video-camera " aria-hidden="true"></i>
+      <div class="time">50min</div>
+    </div>
+    <div class="box-content">
+      <i class="fa fa-video-camera"></i>
+    </div>
+    <div class="box-footer">
+      <div class="comments"><i class="fa fa-comment-o" aria-hidden="true"></i> 15</div>
+      <div class="likes"><i class="fa fa-heart-o" aria-hidden="true"></i> 21</div>
+    </div>
+  </div> -->
+</div>
+<!-- <div *ngIf="loading" class="loader-wrapper">
+  <i class="fa fa-spinner loader" aria-hidden="true"></i>
+</div> -->
+

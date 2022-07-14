@@ -1,0 +1,36 @@
+.note{
+  max-height: 200px;
+  width: 100%;
+  width: fit-content;
+  background: #20a8f7;
+  color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.title{
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.description{
+  font-size: .9rem;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  font-size: .6rem;
+  color: #757575;//04517e;
+  padding-top: .5rem;
+  font-weight: 600;
+}
+
+.footer .fa{
+  font-size: .8rem;
+  color: #fff;
+}
+.time{
+
+}
